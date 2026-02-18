@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package release
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-helm-go/helm/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-helm-go/helm/v12/release/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/resources/release helm_release}.
 type Release interface {
-	cdktf.TerraformResource
+	cdktn.TerraformResource
 	Atomic() interface{}
 	SetAtomic(val interface{})
 	AtomicInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	Chart() *string
 	SetChart(val *string)
 	ChartInput() *string
@@ -65,9 +65,9 @@ type Release interface {
 	SetForceUpdate(val interface{})
 	ForceUpdateInput() interface{}
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -77,9 +77,9 @@ type Release interface {
 	SetKeyring(val *string)
 	KeyringInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Lint() interface{}
 	SetLint(val interface{})
 	LintInput() interface{}
@@ -102,9 +102,9 @@ type Release interface {
 	Postrender() ReleasePostrenderOutputReference
 	PostrenderInput() interface{}
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	Provisioners() *[]interface{}
 	// Experimental.
@@ -141,7 +141,7 @@ type Release interface {
 	ResetValues() interface{}
 	SetResetValues(val interface{})
 	ResetValuesInput() interface{}
-	Resources() cdktf.StringMap
+	Resources() cdktn.StringMap
 	ReuseValues() interface{}
 	SetReuseValues(val interface{})
 	ReuseValuesInput() interface{}
@@ -164,7 +164,7 @@ type Release interface {
 	SetTakeOwnership(val interface{})
 	TakeOwnershipInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -200,7 +200,7 @@ type Release interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -218,9 +218,9 @@ type Release interface {
 	// Experimental.
 	HasResourceMove() interface{}
 	// Experimental.
-	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	ImportFrom(id *string, provider cdktn.TerraformProvider)
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Move the resource corresponding to "id" to this resource.
 	//
 	// Note that the resource being moved from must be marked as moved using it's instance function.
@@ -301,7 +301,7 @@ type Release interface {
 
 // The jsii proxy struct for Release
 type jsiiProxy_Release struct {
-	internal.Type__cdktfTerraformResource
+	internal.Type__cdktnTerraformResource
 }
 
 func (j *jsiiProxy_Release) Atomic() interface{} {
@@ -324,8 +324,8 @@ func (j *jsiiProxy_Release) AtomicInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Release) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Release) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -574,8 +574,8 @@ func (j *jsiiProxy_Release) ForceUpdateInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Release) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Release) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -634,8 +634,8 @@ func (j *jsiiProxy_Release) KeyringInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Release) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_Release) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -794,8 +794,8 @@ func (j *jsiiProxy_Release) PostrenderInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Release) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_Release) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -1024,8 +1024,8 @@ func (j *jsiiProxy_Release) ResetValuesInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Release) Resources() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_Release) Resources() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"resources",
@@ -1204,8 +1204,8 @@ func (j *jsiiProxy_Release) TakeOwnershipInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Release) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Release) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -1405,7 +1405,7 @@ func NewRelease(scope constructs.Construct, id *string, config *ReleaseConfig) R
 	j := jsiiProxy_Release{}
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1418,7 +1418,7 @@ func NewRelease_Override(r Release, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -1575,7 +1575,7 @@ func (j *jsiiProxy_Release)SetForceUpdate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Release)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Release)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1594,7 +1594,7 @@ func (j *jsiiProxy_Release)SetKeyring(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Release)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Release)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -1660,7 +1660,7 @@ func (j *jsiiProxy_Release)SetPassCredentials(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Release)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Release)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1910,17 +1910,17 @@ func (j *jsiiProxy_Release)SetWaitForJobs(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a Release resource upon running "cdktf plan <stack-name>".
-func Release_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Release resource upon running "cdktn plan <stack-name>".
+func Release_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateRelease_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1955,7 +1955,7 @@ func Release_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1974,7 +1974,7 @@ func Release_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1993,7 +1993,7 @@ func Release_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2006,7 +2006,7 @@ func Release_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		"tfResourceType",
 		&returns,
 	)
@@ -2051,11 +2051,11 @@ func (r *jsiiProxy_Release) GetAnyMapAttribute(terraformAttribute *string) *map[
 	return returns
 }
 
-func (r *jsiiProxy_Release) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_Release) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -2192,7 +2192,7 @@ func (r *jsiiProxy_Release) HasResourceMove() interface{} {
 	return returns
 }
 
-func (r *jsiiProxy_Release) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+func (r *jsiiProxy_Release) ImportFrom(id *string, provider cdktn.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
 	}
@@ -2203,11 +2203,11 @@ func (r *jsiiProxy_Release) ImportFrom(id *string, provider cdktf.TerraformProvi
 	)
 }
 
-func (r *jsiiProxy_Release) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_Release) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,

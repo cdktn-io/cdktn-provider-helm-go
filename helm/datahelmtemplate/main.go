@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datahelmtemplate
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplate",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplate",
 		reflect.TypeOf((*DataHelmTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -190,20 +190,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateConfig",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateConfig",
 		reflect.TypeOf((*DataHelmTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplatePostrender",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplatePostrender",
 		reflect.TypeOf((*DataHelmTemplatePostrender)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplatePostrenderOutputReference",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplatePostrenderOutputReference",
 		reflect.TypeOf((*DataHelmTemplatePostrenderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -235,16 +235,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplatePostrenderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSet",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSet",
 		reflect.TypeOf((*DataHelmTemplateSet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetList",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetList",
 		reflect.TypeOf((*DataHelmTemplateSetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -261,16 +261,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetListStruct",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetListStruct",
 		reflect.TypeOf((*DataHelmTemplateSetListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetListStructList",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetListStructList",
 		reflect.TypeOf((*DataHelmTemplateSetListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -287,12 +287,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetListStructList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetListStructOutputReference",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetListStructOutputReference",
 		reflect.TypeOf((*DataHelmTemplateSetListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,12 +324,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetListStructOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetOutputReference",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetOutputReference",
 		reflect.TypeOf((*DataHelmTemplateSetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -364,16 +364,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetSensitive",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetSensitive",
 		reflect.TypeOf((*DataHelmTemplateSetSensitive)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetSensitiveList",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetSensitiveList",
 		reflect.TypeOf((*DataHelmTemplateSetSensitiveList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -390,12 +390,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetSensitiveList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetSensitiveOutputReference",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetSensitiveOutputReference",
 		reflect.TypeOf((*DataHelmTemplateSetSensitiveOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -429,16 +429,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetSensitiveOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetWo",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetWo",
 		reflect.TypeOf((*DataHelmTemplateSetWo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetWoList",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetWoList",
 		reflect.TypeOf((*DataHelmTemplateSetWoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -455,12 +455,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetWoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetWoOutputReference",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetWoOutputReference",
 		reflect.TypeOf((*DataHelmTemplateSetWoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -494,16 +494,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateSetWoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateTimeouts",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateTimeouts",
 		reflect.TypeOf((*DataHelmTemplateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateTimeoutsOutputReference",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateTimeoutsOutputReference",
 		reflect.TypeOf((*DataHelmTemplateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -533,7 +533,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataHelmTemplateTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package datahelmtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-helm-go/helm/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-helm-go/helm/v12/datahelmtemplate/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/datahelmtemplate/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type DataHelmTemplateSetList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -26,8 +26,8 @@ type DataHelmTemplateSetList interface {
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
 	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TerraformResource() cdktn.IInterpolatingParent
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
@@ -35,13 +35,13 @@ type DataHelmTemplateSetList interface {
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataHelmTemplateSetOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -51,7 +51,7 @@ type DataHelmTemplateSetList interface {
 
 // The jsii proxy struct for DataHelmTemplateSetList
 type jsiiProxy_DataHelmTemplateSetList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataHelmTemplateSetList) CreationStack() *[]*string {
@@ -94,8 +94,8 @@ func (j *jsiiProxy_DataHelmTemplateSetList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataHelmTemplateSetList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataHelmTemplateSetList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -115,7 +115,7 @@ func (j *jsiiProxy_DataHelmTemplateSetList) WrapsSet() *bool {
 }
 
 
-func NewDataHelmTemplateSetList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHelmTemplateSetList {
+func NewDataHelmTemplateSetList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataHelmTemplateSetList {
 	_init_.Initialize()
 
 	if err := validateNewDataHelmTemplateSetListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -124,7 +124,7 @@ func NewDataHelmTemplateSetList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_DataHelmTemplateSetList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetList",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,11 +132,11 @@ func NewDataHelmTemplateSetList(terraformResource cdktf.IInterpolatingParent, te
 	return &j
 }
 
-func NewDataHelmTemplateSetList_Override(d DataHelmTemplateSetList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataHelmTemplateSetList_Override(d DataHelmTemplateSetList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.dataHelmTemplate.DataHelmTemplateSetList",
+		"@cdktn/provider-helm.dataHelmTemplate.DataHelmTemplateSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -164,7 +164,7 @@ func (j *jsiiProxy_DataHelmTemplateSetList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataHelmTemplateSetList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataHelmTemplateSetList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,11 +186,11 @@ func (j *jsiiProxy_DataHelmTemplateSetList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DataHelmTemplateSetList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataHelmTemplateSetList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +231,7 @@ func (d *jsiiProxy_DataHelmTemplateSetList) Get(index *float64) DataHelmTemplate
 	return returns
 }
 
-func (d *jsiiProxy_DataHelmTemplateSetList) Resolve(context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataHelmTemplateSetList) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

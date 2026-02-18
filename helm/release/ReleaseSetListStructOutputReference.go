@@ -1,18 +1,18 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package release
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-helm-go/helm/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-helm-go/helm/v12/release/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ReleaseSetListStructOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ReleaseSetListStructOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *[]*string
 	SetValue(val *[]*string)
 	ValueInput() *[]*string
@@ -51,7 +51,7 @@ type ReleaseSetListStructOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type ReleaseSetListStructOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type ReleaseSetListStructOutputReference interface {
 
 // The jsii proxy struct for ReleaseSetListStructOutputReference
 type jsiiProxy_ReleaseSetListStructOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReleaseSetListStructOutputReference) ComplexObjectIndex() interface{} {
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ReleaseSetListStructOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_ReleaseSetListStructOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReleaseSetListStructOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -196,7 +196,7 @@ func (j *jsiiProxy_ReleaseSetListStructOutputReference) ValueInput() *[]*string 
 }
 
 
-func NewReleaseSetListStructOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReleaseSetListStructOutputReference {
+func NewReleaseSetListStructOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReleaseSetListStructOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReleaseSetListStructOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -205,7 +205,7 @@ func NewReleaseSetListStructOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ReleaseSetListStructOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.release.ReleaseSetListStructOutputReference",
+		"@cdktn/provider-helm.release.ReleaseSetListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -213,11 +213,11 @@ func NewReleaseSetListStructOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewReleaseSetListStructOutputReference_Override(r ReleaseSetListStructOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewReleaseSetListStructOutputReference_Override(r ReleaseSetListStructOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.release.ReleaseSetListStructOutputReference",
+		"@cdktn/provider-helm.release.ReleaseSetListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
@@ -278,7 +278,7 @@ func (j *jsiiProxy_ReleaseSetListStructOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ReleaseSetListStructOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReleaseSetListStructOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -329,11 +329,11 @@ func (r *jsiiProxy_ReleaseSetListStructOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (r *jsiiProxy_ReleaseSetListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReleaseSetListStructOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -457,8 +457,8 @@ func (r *jsiiProxy_ReleaseSetListStructOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (r *jsiiProxy_ReleaseSetListStructOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReleaseSetListStructOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -470,11 +470,11 @@ func (r *jsiiProxy_ReleaseSetListStructOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (r *jsiiProxy_ReleaseSetListStructOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReleaseSetListStructOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -486,7 +486,7 @@ func (r *jsiiProxy_ReleaseSetListStructOutputReference) InterpolationForAttribut
 	return returns
 }
 
-func (r *jsiiProxy_ReleaseSetListStructOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+func (r *jsiiProxy_ReleaseSetListStructOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
 	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}

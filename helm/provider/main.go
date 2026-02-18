@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		reflect.TypeOf((*HelmProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,28 +72,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_HelmProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.provider.HelmProviderConfig",
+		"@cdktn/provider-helm.provider.HelmProviderConfig",
 		reflect.TypeOf((*HelmProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.provider.HelmProviderExperiments",
+		"@cdktn/provider-helm.provider.HelmProviderExperiments",
 		reflect.TypeOf((*HelmProviderExperiments)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.provider.HelmProviderKubernetes",
+		"@cdktn/provider-helm.provider.HelmProviderKubernetes",
 		reflect.TypeOf((*HelmProviderKubernetes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.provider.HelmProviderKubernetesExec",
+		"@cdktn/provider-helm.provider.HelmProviderKubernetesExec",
 		reflect.TypeOf((*HelmProviderKubernetesExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.provider.HelmProviderRegistries",
+		"@cdktn/provider-helm.provider.HelmProviderRegistries",
 		reflect.TypeOf((*HelmProviderRegistries)(nil)).Elem(),
 	)
 }

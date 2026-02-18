@@ -1,4 +1,4 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package release
@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.Release",
+		"@cdktn/provider-helm.release.Release",
 		reflect.TypeOf((*Release)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -199,20 +199,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Release{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseConfig",
+		"@cdktn/provider-helm.release.ReleaseConfig",
 		reflect.TypeOf((*ReleaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseMetadata",
+		"@cdktn/provider-helm.release.ReleaseMetadata",
 		reflect.TypeOf((*ReleaseMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseMetadataOutputReference",
+		"@cdktn/provider-helm.release.ReleaseMetadataOutputReference",
 		reflect.TypeOf((*ReleaseMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appVersion", GoGetter: "AppVersion"},
@@ -249,16 +249,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleasePostrender",
+		"@cdktn/provider-helm.release.ReleasePostrender",
 		reflect.TypeOf((*ReleasePostrender)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleasePostrenderOutputReference",
+		"@cdktn/provider-helm.release.ReleasePostrenderOutputReference",
 		reflect.TypeOf((*ReleasePostrenderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -290,16 +290,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleasePostrenderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseSet",
+		"@cdktn/provider-helm.release.ReleaseSet",
 		reflect.TypeOf((*ReleaseSet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetList",
+		"@cdktn/provider-helm.release.ReleaseSetList",
 		reflect.TypeOf((*ReleaseSetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -316,16 +316,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseSetListStruct",
+		"@cdktn/provider-helm.release.ReleaseSetListStruct",
 		reflect.TypeOf((*ReleaseSetListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetListStructList",
+		"@cdktn/provider-helm.release.ReleaseSetListStructList",
 		reflect.TypeOf((*ReleaseSetListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -342,12 +342,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetListStructList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetListStructOutputReference",
+		"@cdktn/provider-helm.release.ReleaseSetListStructOutputReference",
 		reflect.TypeOf((*ReleaseSetListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -378,12 +378,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetListStructOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetOutputReference",
+		"@cdktn/provider-helm.release.ReleaseSetOutputReference",
 		reflect.TypeOf((*ReleaseSetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -418,16 +418,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseSetSensitive",
+		"@cdktn/provider-helm.release.ReleaseSetSensitive",
 		reflect.TypeOf((*ReleaseSetSensitive)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetSensitiveList",
+		"@cdktn/provider-helm.release.ReleaseSetSensitiveList",
 		reflect.TypeOf((*ReleaseSetSensitiveList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -444,12 +444,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetSensitiveList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetSensitiveOutputReference",
+		"@cdktn/provider-helm.release.ReleaseSetSensitiveOutputReference",
 		reflect.TypeOf((*ReleaseSetSensitiveOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -483,16 +483,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetSensitiveOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseSetWo",
+		"@cdktn/provider-helm.release.ReleaseSetWo",
 		reflect.TypeOf((*ReleaseSetWo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetWoList",
+		"@cdktn/provider-helm.release.ReleaseSetWoList",
 		reflect.TypeOf((*ReleaseSetWoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -509,12 +509,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetWoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseSetWoOutputReference",
+		"@cdktn/provider-helm.release.ReleaseSetWoOutputReference",
 		reflect.TypeOf((*ReleaseSetWoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -548,16 +548,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseSetWoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-helm.release.ReleaseTimeouts",
+		"@cdktn/provider-helm.release.ReleaseTimeouts",
 		reflect.TypeOf((*ReleaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-helm.release.ReleaseTimeoutsOutputReference",
+		"@cdktn/provider-helm.release.ReleaseTimeoutsOutputReference",
 		reflect.TypeOf((*ReleaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -596,7 +596,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ReleaseTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

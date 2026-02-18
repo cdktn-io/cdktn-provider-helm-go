@@ -1,20 +1,20 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-helm-go/helm/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-helm-go/helm/v12/provider/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/provider/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs helm}.
 type HelmProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -22,7 +22,7 @@ type HelmProvider interface {
 	SetBurstLimit(val *float64)
 	BurstLimitInput() *float64
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	Debug() interface{}
@@ -66,7 +66,7 @@ type HelmProvider interface {
 	SetRepositoryConfigPath(val *string)
 	RepositoryConfigPathInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -106,7 +106,7 @@ type HelmProvider interface {
 
 // The jsii proxy struct for HelmProvider
 type jsiiProxy_HelmProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_HelmProvider) Alias() *string {
@@ -149,8 +149,8 @@ func (j *jsiiProxy_HelmProvider) BurstLimitInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_HelmProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_HelmProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -419,8 +419,8 @@ func (j *jsiiProxy_HelmProvider) RepositoryConfigPathInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_HelmProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_HelmProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -460,7 +460,7 @@ func NewHelmProvider(scope constructs.Construct, id *string, config *HelmProvide
 	j := jsiiProxy_HelmProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewHelmProvider_Override(h HelmProvider, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -587,17 +587,17 @@ func (j *jsiiProxy_HelmProvider)SetRepositoryConfigPath(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a HelmProvider resource upon running "cdktf plan <stack-name>".
-func HelmProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a HelmProvider resource upon running "cdktn plan <stack-name>".
+func HelmProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateHelmProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -632,7 +632,7 @@ func HelmProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func HelmProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func HelmProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func HelmProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-helm.provider.HelmProvider",
+		"@cdktn/provider-helm.provider.HelmProvider",
 		"tfResourceType",
 		&returns,
 	)

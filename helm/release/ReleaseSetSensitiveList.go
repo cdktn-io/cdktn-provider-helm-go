@@ -5,9 +5,9 @@ package release
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-helm-go/helm/v13/jsii"
 
-	"github.com/cdktn-io/cdktn-provider-helm-go/helm/v12/release/internal"
+	"github.com/cdktn-io/cdktn-provider-helm-go/helm/v13/release/internal"
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 

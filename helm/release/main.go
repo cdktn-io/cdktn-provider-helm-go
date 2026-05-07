@@ -196,6 +196,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForJobs", GoGetter: "WaitForJobs"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForJobsInput", GoGetter: "WaitForJobsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "waitInput", GoGetter: "WaitInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Release{}

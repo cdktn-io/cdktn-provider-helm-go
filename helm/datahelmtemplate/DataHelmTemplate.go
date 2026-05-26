@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/data-sources/template helm_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.2/docs/data-sources/template helm_template}.
 type DataHelmTemplate interface {
 	cdktn.TerraformDataSource
 	ApiVersions() *[]*string
@@ -1339,7 +1339,7 @@ func (j *jsiiProxy_DataHelmTemplate) WaitInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/data-sources/template helm_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.2/docs/data-sources/template helm_template} Data Source.
 func NewDataHelmTemplate(scope constructs.Construct, id *string, config *DataHelmTemplateConfig) DataHelmTemplate {
 	_init_.Initialize()
 
@@ -1357,7 +1357,7 @@ func NewDataHelmTemplate(scope constructs.Construct, id *string, config *DataHel
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.1/docs/data-sources/template helm_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/helm/3.1.2/docs/data-sources/template helm_template} Data Source.
 func NewDataHelmTemplate_Override(d DataHelmTemplate, scope constructs.Construct, id *string, config *DataHelmTemplateConfig) {
 	_init_.Initialize()
 

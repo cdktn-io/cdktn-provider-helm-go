@@ -86,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSetWo", GoMethod: "PutSetWo"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "renderSubchartNotes", GoGetter: "RenderSubchartNotes"},
 			_jsii_.MemberProperty{JsiiProperty: "renderSubchartNotesInput", GoGetter: "RenderSubchartNotesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replace", GoGetter: "Replace"},

@@ -34,6 +34,14 @@ func (h *jsiiProxy_HelmProvider) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (h *jsiiProxy_HelmProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateHelmProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

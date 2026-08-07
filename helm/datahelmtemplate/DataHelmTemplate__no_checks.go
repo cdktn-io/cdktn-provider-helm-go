@@ -79,6 +79,10 @@ func (d *jsiiProxy_DataHelmTemplate) validatePutTimeoutsParameters(value *DataHe
 	return nil
 }
 
+func (d *jsiiProxy_DataHelmTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataHelmTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

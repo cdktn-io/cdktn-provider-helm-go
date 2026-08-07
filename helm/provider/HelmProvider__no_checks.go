@@ -15,6 +15,10 @@ func (h *jsiiProxy_HelmProvider) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (h *jsiiProxy_HelmProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateHelmProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

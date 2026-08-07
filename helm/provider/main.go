@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "qps", GoGetter: "Qps"},
 			_jsii_.MemberProperty{JsiiProperty: "qpsInput", GoGetter: "QpsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "registries", GoGetter: "Registries"},
 			_jsii_.MemberProperty{JsiiProperty: "registriesInput", GoGetter: "RegistriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "registryConfigPath", GoGetter: "RegistryConfigPath"},
